@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ejercicio 7: Diseño de navegación</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body> 
+  <br> <br>
+      <h1 id="Biografia">Mi Biografía</h1>
+      <p>Hola, mi nombre es Anthony aunque Antho suena mas cómodo. Mis estudios tecnológicos los realicé en el Instituto tecnológico Bolivariano donde cursé la carrera de Desarrollo de software. Actualmente tengo 23 años y estoy cursando la ingeniería en sistemas inteligentes en la Universidad Bolivariana del Ecuador(UBE).</p>
+  
+  <br> <h1 id="Pasatiempos">Pasatiempos</h1> 
+  <p>Algunas de mis aficiones son: </p>
+      <ul>
+        <li>Las caminatas a larga distancia.</li>
+        <li>Explorar nuevos lugares.</li>
+        <li>Lectura de libros.</li>
+        <li>Fotografiar mi entorno.</li>
+
+      </ul> <br><br>
+
+  <h1 id="DP">Datos Personales</h1> <br>
+  
+  <div>
+    <ul>
+      <li> <strong>Nombres:</strong> Bryan Anthony </li>
+      <li> <strong>Apellidos:</strong> Garzón Franco </li>
+      <li> <strong>Edad:</strong> 23 años</li>
+      <li> <strong>Nacionalidad:</strong> Ecuatoriana</li>
+      <li> <strong>Ciudad:</strong> Duran</li>
+      <li> <strong>Cumpleaños:</strong> 27 septiembre 2000</li>
+      <li> <strong>Correo Electrónico:</strong> bagarzonf@ube.edu.ec</li>
+
+    </ul>
+  </div> <br>
+
+
+  <footer>
+    <nav>
+      <ul>
+          <li><a href="#Biografia">Biografía</a></li>
+          <li><a href="#Pasatiempos">Pasatiempos</a></li>
+          <li><a href="#DP">Datos Personales</a></li>
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+      </ul>
+  </nav>
+</footer>
+
+
+  
+  <style>
+
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Segoe Print, sans-serif;
+      color: #ffff;
+      font-weight: bold;
+      font-size: 40px;
+
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    p {
+      padding: 40px;
+      color: #ffff;
+       font-family: SComic Sans MS;
+      margin-bottom: 0px;
+
+    }
+    ul{
+       font-family: SComic Sans MS;
+      list-style-type: disc;
+      margin-left: 80px;
+      margin-top: 0px;
+      color: #ffff;
+       font-family: SComic Sans MS;
+      
+    }
+    .tablaPaises{
+     margin: 0 auto;
+    }
+
+    .formulario {
+        max-width: 400px;
+        margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #FBFCFC;
+      border-radius: 15px;
+    }
+
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+    }
+    button {
+        background-color: #1F618D;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+
+    /* Estilos para dispositivos de escritorio (ancho de pantalla mayor a 768px) */
+    @media (min-width: 768px) {
+        header {
+            background-color: #333;
+            padding: 20px;
+        }
+
+        nav ul {
+            text-align: right;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+    }
+
+    /* Estilos para dispositivos móviles (ancho de pantalla menor o igual a 767px) */
+    @media (max-width: 767px) {
+        header {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            text-align: center;
+        }
+
+        nav li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    
+
+
+
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none; 
+        transition: color 0.3s; 
+    }
+
+    nav a:hover, nav a:active {
+        color: #0074d9; 
+    }
+
+
+
+    
+
+  </style>
+
+
+  </div>
+
+  
+</body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>
